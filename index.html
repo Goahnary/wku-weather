@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>WKU Weather</title>
+	<meta name="description" content="This is the homepage for the WKU ACM Student Chapter.">
+	<meta name="author" content="Noah Gary">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/main/main.css">
+	<link id="pagestyle" rel="stylesheet" href="css/cyborg.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+	<script type="javascript/text" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	var binary;
+
+    	window.onload = function(){
+    		binary = true;
+    	}
+
+    	function swapStyleSheet(sheet){
+			
+			document.getElementById('pagestyle').setAttribute('href', sheet);
+			
+			if (binary) {
+				document.getElementById('style-toggle').setAttribute('onclick', "swapStyleSheet('/css/cyborg.min.css')");
+				document.getElementById('style-toggle').innerHTML = "Change to Dark Theme";
+				binary = false;
+			} else {
+				document.getElementById('style-toggle').setAttribute('onclick', "swapStyleSheet('/css/bootstrap.min.css')");
+				document.getElementById('style-toggle').innerHTML = "Change to Light Theme";
+				binary = true;
+			}
+		}
+
+    </script>
+</head>
+<body>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">WKU Weather</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="WXanalysis.php">WX Analysis</a></li>
+					<li><a href="skycam.html">Skycam</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<a id="style-toggle" onclick="swapStyleSheet('/css/bootstrap.min.css')" style="float: right; padding-top: 15px;">
+					Change to Light Theme
+				</a>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	<div id="main-div" class="container" role="main">
+		<p>Hello, world!</p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+footer {
+	margin-top: 40px;
+	border-top: 1px solid #282828;
+}
+
+img {
+	max-width: 100%;
+}
+small {
+	padding: 0px;
+	margin: 0px;
+	font-style: italic;
+	color: lightgrey;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+blockquote:after {
+	color: #ccc;
+	content: close-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+blockquote p {
+	display: inline;
+}
+
+#profile-info{
+	float: left;
+}
+
+#profile-picture{
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+
+#carousel-slides {
+	margin: 100px auto 0px auto;
+	max-width: 900px;
+	background-color: black;
+}
+
+#carousel-slides .carousel-inner .item img {
+	margin: 0px auto;
+	max-height: 500px;
+}
+
+#main-div {
+	padding-top: 50px;
+}
+
+#maps-div {
+	padding-top: 15px;
+}
